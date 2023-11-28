@@ -86,10 +86,164 @@
     background-color: blue;
     color: white;
 }
+.plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+    }
+.plan {
+    border: 1px solid white;
+    height: 650px;
+    width: 270px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.basic {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+.down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.plan button {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.plan a {
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+.plan hr {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.down p {
+    margin-left: 10px;
+}
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.message img {
+    width: 300px;
+}
+.serve {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.wrapper { 
+    max-width: 350px; 
+    background: #fff; 
+    padding: 25px; 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 2px
+    rgba(254, 236, 164, 1); 
+} 
+  
+.wrapper h2 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    color: #332902; 
+} 
+  
+.wrapper .input_field { 
+    margin-bottom: 10px; 
+} 
+  
+.wrapper 
+    .input_field 
+    input[type="text"], 
+.wrapper textarea { 
+    border: 1px solid #e0e0e0; 
+    width: 100%; 
+    padding: 10px; 
+} 
+  
+.wrapper textarea { 
+    resize: none; 
+    height: 80px; 
+} 
+  
+.wrapper .btn input[type="submit"] { 
+    border: 0px; 
+    margin-top: 15px; 
+    padding: 10px; 
+    text-align: center; 
+    width: 150px; 
+    background: #569a4d; 
+    color: #fcfbf7; 
+    text-transform: uppercase; 
+    letter-spacing: 5px; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    cursor: pointer; 
+} 
+  
+#error_message { 
+    margin-bottom: 20px; 
+    background: #fe8b8e; 
+    padding: 0px; 
+    text-align: center; 
+    font-size: 14px; 
+    transition: all 0.5s ease; 
+}
+.touch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+    justify-content: space-evenly;
+}
 @media only screen and (min-width: 300px) and (max-width: 700px) {
     body {
         width: auto;
         height: auto;
+    }
+    .plans {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .plan {
+        width: 100%;
+    }
+    .message {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .touch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-evenly;
+        margin-left: 80px;
+    }
+    .touch iframe {
+        align-items: center;
     }
     .core {
         display: flex;
