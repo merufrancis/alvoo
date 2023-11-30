@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practice.css">
   <link rel="stylesheet" href="portfolio.css">
 </head>
-
 <body>
-    <nav>
+    <header>
         <div class="tel">
             <h4 style="font-size: 10px; color: black;">T. +254 (0) 790 000 166 | E: info@alvogroup.com</h4>
         </div>
@@ -24,43 +23,50 @@
                 <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-envelope"></a>
                 <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-linkedin"></a>
             </div>
+        </header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="Logo.png"/>
+        </div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Practice.html">Our Expertise</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Plans and Pricing</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+          </div>
+        </ul>
       </nav>
-  <header>
-    <div>
-    <img id="logo" src="legal.jpg" alt="Your Logo">
-    </div>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Practice.html">Our Expertise</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Plans and Pricing</a>
-        <a href="Contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-</header>
 <section class="video-container">
-
-    <video autoplay muted loop plays-inline>
+    <video autoplay muted loop>
         <!-- Replace 'your-video.mp4' with the path to your video file -->
-        <source src="video (1080p).mp4" type="video/mp4">
+        <source src="Conceptualization.mp4" type="video/mp4">
       </video>
-
     <div class="main-content">
         <h3 style="font-size: 24px; color: white;"><span style="letter-spacing: 3px;">W E  </span>I N S P I R E  B R A N D S & </h3>
         <br>
-        <h3 style="font-size: 45px; color: blue;">Craft their Identities.</h3>
+        <h3 style="font-size: 45px; color: #0098FD;">Craft their Identities.</h3>
         <br>
         <hr>
         <br>
-        <p>We are focused on creating great designs and developing modern websites all year round. Our passion<br> <br>is to create world-class digital and traditional art for local and international brands.</p>
+        <p style="color: white;">We are focused on creating great designs and developing modern websites all year round. Our passion<br> <br>is to create world-class digital and traditional art for local and international brands.</p>
         <br>
         <br>
         <div class="btn">
-            <a href="#"><button class="btnn">Our Company</button></a>
-            <a href="#"><button class="btnnn">Contact Us</button></a>
+            <a href="Practice.html"><button class="btnn">Our Company</button></a>
+            <a href="Contact.html"><button class="btnnn">Contact Us</button></a>
         </div>
       </div>
 </div>
@@ -68,7 +74,7 @@
 <div class="hero">
     <div class="web">
         <div class="all">
-        <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-desktop"></a>
+        <a class="fa fa-desktop"></a>
         <h3>Website Design & <br>Development</h3>
     </div>
         <br>
@@ -76,7 +82,7 @@
     </div>
     <div class="graph">
         <div class="all">
-        <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-desktop"></a>
+        <a class="fa fa-star"></a>
         <h3>Graphic Design & <br> Logo Creation</h3>
         </div>
         <br>
@@ -84,7 +90,7 @@
     </div>
     <div class="brand">
         <div class="all">
-        <a class="fa fa-desktop"></a>
+        <a class="fa fa-check"></a>
         <h3>Brand Identity & <br> Architecture</h3>
         </div>
         <br>
@@ -116,7 +122,7 @@
     </div>
     <div class="custom">
         <div class="going">
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-desktop"></a>
+            <a class="fa fa-desktop"></a>
             <h3>Custom Design</h3><br>
             <ul>
                 <li>Beautiful Custom Design.</li>
@@ -129,7 +135,7 @@
             </ul>
         </div>
         <div class="going">
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-desktop"></a>
+            <a class="fa fa-check"></a>
             <h3>Quality Brand</h3>
             <br>
             <ul>
@@ -143,7 +149,7 @@
             </ul>
         </div>
         <div class="going">
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-desktop"></a>
+            <a class="fa fa-star"></a>
             <h3>Ongoing Support</h3>
             <br>
             <ul>
@@ -287,8 +293,6 @@
         <a href="">Contact</a>
     </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
-
 </html>

@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="practice.css">
 </head>
 <body>
-    <nav>
+    <header>
         <div class="tel">
             <h4 style="font-size: 10px; color: black;">T. +254 (0) 790 000 166 | E: info@alvogroup.com</h4>
         </div>
@@ -20,23 +21,32 @@
                 <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-envelope"></a>
                 <a href="https://www.facebook.com/yourpage" target="_blank" class="fa fa-linkedin"></a>
             </div>
+        </header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="Logo.png"/>
+        </div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Practice.html">Our Expertise</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Plans and Pricing</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+          </div>
+        </ul>
       </nav>
-  <header>
-    <div>
-    <img id="logo" src="legal.jpg" alt="Your Logo">
-    </div>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Practice.html">Our Expertise</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Plans and Pricing</a>
-        <a href="Contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-</header>
 <div class="who">
     <h3>Who we are</h3>
     <hr>

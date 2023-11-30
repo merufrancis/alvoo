@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 } 
-  nav {
+  header {
     background-color: white;
     color: rgb(34, 8, 131);
     text-align: center;
@@ -28,25 +28,24 @@
       padding: 0;
       box-sizing: border-box;
     }
-
-    header {
-      background-color: #0098FD;
-      color: white;
-      text-align: center;
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      overflow: hidden;
-      transition: transform 0.3s ease-in-out;
-    }
-    header a {
+    .navbar {
+        background-color: #0098FD;
+        color: white;
+        text-align: center;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+    .navbar a {
         color: white;
         text-decoration: none;
         padding: 10px;
     }
-    header a:before {
+    .navbar a:before {
         content: "[";
         margin-right: 10px;
         display: inline-block;
@@ -59,7 +58,7 @@
         transition: transform 0.3s, opacity 0.2s;
       }
       
-      header a:after {
+     .navbar a:after {
         content: "]";
         margin-left: 10px;
         display: inline-block;
@@ -72,24 +71,18 @@
         transform: translateX(-20px);
       }
       
-     header a:hover:before,
-     header a:hover:after {
+     .navbar a:hover:before,
+     .navbar a:hover:after {
         opacity: 1;
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
         transform: translateX(0px);
       }
 
-    #logo {
-      max-width: 100px;
-      max-height: 100px;
-      padding-left: 40px;
-    }
-
     .social-icons {
         display: flex;
-        justify-content: space-around;
-        width: 200px; /* Adjust the width as needed */
+        justify-content: space-evenly;
+        width: 300px; /* Adjust the width as needed */
         padding-right: 70px;
     }
     
@@ -137,7 +130,7 @@
     }
     .main-content h2 {
         color: #0098FD;
-        font-size: xx-large;
+        font-size: 24px;
     }
     .btn {
         display: flex;
@@ -185,8 +178,8 @@
         padding: 50px;
     }
     .hero p {
-        font-weight: 50;
-        font-style: italic;
+        font-weight: 10;
+        font-size: 16px;
     }
     .hero a {
         font-size: 34px;
@@ -256,9 +249,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('legal.jpg');
-        height: 400px;
-        justify-content: space-around;
+        height: 450px;
+        background-color: #0098FD;
+        color: white;
     }
     .best {
         display: flex;
@@ -497,7 +490,7 @@
         align-items: flex-start;
         height: 80px;
         color: #fff;
-        background-image: url('rebuilding-online.jpg');
+        background-image: url('andras-vas-Bd7gNnWJBkU-unsplash.jpg');
         height: 200px;
         padding-right: 50%;
         padding-left: 50px;
@@ -539,8 +532,9 @@
         align-items: center;
         height: 80px;
         color: #fff;
-        background-image: url('rebuilding-online.jpg');
+        background-image: url('andras-vas-Bd7gNnWJBkU-unsplash.jpg');
         height: 150px;
+        background-size: cover;
     }
     .artisan hr {
         color: black;
@@ -623,7 +617,7 @@
         align-items: center;
         height: 80px;
         color: #fff;
-        background-image: url('/uploads/2021/02/device-digital-device-hands-1893610-scaled.jpg');
+        background-image: url('andras-vas-Bd7gNnWJBkU-unsplash.jpg');
         height: 150px;
         background-size: cover;
     }
@@ -683,10 +677,6 @@
             width: auto;
             height: auto;
         }
-        .header {
-            display: block;
-            transform: translateX(-100%);
-          }
           .container {
             display: flex;
             flex-direction: column;
@@ -702,7 +692,7 @@
           .menu-icon {
             display: block;
           }
-        nav {
+        header {
             width: auto;
             padding: 10px;
         }
@@ -714,7 +704,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
         }
         .main-content hr {
             margin-left: 100px;
@@ -724,8 +714,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: auto;
-            margin-right: 70px;
+            height: 130px;
+            margin-right: 90px;
         }
         .hero {
             height: 800px;
@@ -749,6 +739,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
         }
         .best {
             display: flex;
@@ -768,8 +759,7 @@
             width: auto;
             flex-direction: column;
             height: auto;
-            justify-content: center;
-            padding-right: 50%;
+            justify-content: space-evenly;
             padding-top: 50px;
             padding-bottom: 50px;
         }
@@ -814,6 +804,10 @@
             flex-direction: column;
             align-items: center;
             height: auto;
+            padding-left: 50px;
+            }
+            .bttn {
+                width: 200px;
             }
             .today p {
                 padding-left: 30px;
